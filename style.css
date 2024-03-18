@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Times New Roman", Georgia, Serif;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+.container{
+    width: 70%;
+    margin: 100px auto;
+}
+
+/*----Navbar--*/
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;  
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+nav .nav-right a {
+    list-style: none;
+  
+}
+nav .nav-left a{
+    font-size: 18px;
+    color: #000;
+    transition: 0.7s;
+    padding: 10px;
+
+}
+nav .nav-left a:hover{
+    background-color: #ccc;
+
+}
+nav .nav-right a{
+    font-size: 18px;
+    color: #000;
+    padding: 10px;
+    transition: 0.7s;
+}
+nav .nav-right a:hover{
+    background-color: #ccc;
+}
+nav .menu{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/*header*/
+header img{
+    width: 100%;
+    position: relative;
+}
+header h2{
+    font-size: 40px;
+    color:aqua;
+    position: absolute;
+    bottom: 25px;
+    letter-spacing: 5px;
+}
+/*section*/
+.About{
+    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+}
+
+.about-left{
+height: 25%;
+opacity:0.7;
+}
+.about-right h4{
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    font-family: "Playfair Display";
+    font-size: 35px;
+    font-weight: 300;
+}
+.about-right h5{
+    font-family: "Playfair Display";
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.about-right p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.about p{
+color: #757575;
+}
+.about-right p span{
+    
+    background-color: powderblue;
+    color: black;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    margin-right: 2px;
+
+}
+hr{
+    margin-left: 250px;
+    margin-right: 250px;
+    opacity: 0.2;
+
+    
+}
+/*our*/
+.menu{
+  display: flex;  
+  padding: 50px 200px 50px 200px;
+  justify-content: space-between;
+  display: flex;
+  gap: 30px;
+
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color:#757575 ;
+}
+.contact h1{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+.contact p{
+    
+    color: #000;
+}
+.contact b{
+    font-weight: bolder;
+    color:cadetblue;
+    font-size: 20px;
+}
+.contact input{
+    width: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    outline: none;
+}
+.contact textarea{
+    width: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    outline: none;
+
+}
+.contact button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+/*footer*/
+.footer{
+    background-color: #000;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding: 30px;
+}
+
+
+@media screen and (max-width : 480px){
+    nav{
+        padding: 10px;
+    }
+    nav .nav-right {
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    .nav-left a{
+        font-size: 10px;
+    }
+    header img{
+        width: 100%;
+        position: relative;
+    }
+    header h2{
+        position: absolute;
+        bottom: 0;
+        display: none;
+    }
+    .About{
+        flex-direction: column;
+    }
+    .about-left img{
+        width: 100%;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+    .menu .menu-right img{
+         width: 100%;
+    }
+}
